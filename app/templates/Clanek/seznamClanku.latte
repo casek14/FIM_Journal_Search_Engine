@@ -1,0 +1,41 @@
+{block content}
+{include 'filter.latte', 'vyraz' => $vyraz}
+
+<div id="vypisClanku">
+    {if $seznam}
+        {foreach $seznam as $item}
+
+            {if $item->getDatabaze() == 'Scopus' }<?php $barva = 'green'; ?>{/if}
+            {if $item->getDatabaze() == 'DOAJ' }<?php $barva = 'blue'; ?>{/if}
+            
+            <a href="{link Detail:detail $item->getId(), $item->getAutor(), $item->getDatabaze()}"> 
+
+
+                <div class="w3-container w3-hoverable w3-card-4 w3-margin-bottom w3-padding-0">
+                    <div class="w3-container w3-{$barva} w3-padding-8 ">{$item->getTitulek()}
+                        <span class="w3-margin-left w3-large w3-white  w3-badge">{$item->getHodnoceni()}</span>
+
+                    </div>
+
+
+                    <div class="w3-container w3-padding-8 w3-small">
+
+                        <span id="seznam"><strong id="tucne">Autor: </strong>{$item->getAutor()}</span>
+                        <span id="seznam"><strong id="tucne">DOI: </strong>{$item->getDOI()}</span>
+                        <span id="seznam"><strong class="w3-margin-left">ISSN: </strong>{$item->getIssn()}</span>
+                        <span id="seznam"><strong class="w3-margin-left">Databáze: </strong>{$item->getDatabaze()}</span>
+                        <span id="seznam"><strong class="w3-margin-left">Vytvořeno: </strong>{$item->getMesicVytvoreni()}/{$item->getRokVytvoreni()}</span>
+
+                        <p id="seznam"><strong>Klíčová slova: </strong>{$item->getKlicovaSlova()}</p>
+                    </div>
+                    <p class="w3-margin-left w3-blockquote w3-section w3-tiny">
+                        {substr($item->getAbstrakt(),0,650)} ...
+                    </p>
+            
+        </div>
+</a>
+    {/foreach}
+{/if}
+</div>    
+<div id="paticka"></div>
+{/block}

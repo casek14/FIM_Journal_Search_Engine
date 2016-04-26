@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/games/XAMPP/htdocs/FIM_Journal_Search_Engine/app/templates/Homepage/default.latte</file>
+            <file>file:/C:/games/XAMPP/htdocs/FIM_Journal_Search_Engine/app/config/config.neon</file>
+            <file>file:/C:/games/XAMPP/htdocs/FIM_Journal_Search_Engine/app/templates/Detail/detail.latte</file>
+            <file>file:/C:/games/XAMPP/htdocs/FIM_Journal_Search_Engine/app/model/DoajParserClanku.php</file>
+            <file>file:/C:/games/XAMPP/htdocs/FIM_Journal_Search_Engine/app/templates/@layout.latte</file>
+            <file>file:/C:/games/XAMPP/htdocs/FIM_Journal_Search_Engine/app/presenters/HomepagePresenter.php</file>
+            <file>file:/C:/games/XAMPP/htdocs/FIM_Journal_Search_Engine/app/model/ScopusParserDetailuClanku.php</file>
+            <file>file:/C:/games/XAMPP/htdocs/FIM_Journal_Search_Engine/app/presenters/ChybaPresenter.php</file>
+            <file>file:/C:/games/XAMPP/htdocs/FIM_Journal_Search_Engine/app/templates/Clanek/seznamClanku.latte</file>
+            <file>file:/C:/games/XAMPP/htdocs/FIM_Journal_Search_Engine/app/model/ScopusParserClanku.php</file>
+            <file>file:/C:/games/XAMPP/htdocs/FIM_Journal_Search_Engine/app/presenters/DetailPresenter.php</file>
+            <file>file:/C:/games/XAMPP/htdocs/FIM_Journal_Search_Engine/app/model/Clanek.php</file>
+            <file>file:/C:/games/XAMPP/htdocs/FIM_Journal_Search_Engine/app/presenters/ClanekPresenter.php</file>
+            <file>file:/C:/games/XAMPP/htdocs/FIM_Journal_Search_Engine/app/presenters/ErrorPresenter.php</file>
+            <file>file:/C:/games/XAMPP/htdocs/FIM_Journal_Search_Engine/www/css/my.css</file>
+            <file>file:/C:/games/XAMPP/htdocs/FIM_Journal_Search_Engine/app/model/SpravceClanku.php</file>
+        </group>
+    </open-files>
+</project-private>

@@ -1,0 +1,104 @@
+/**
+    Created on : 24.3.2016, 22:03:00
+    Author     : Jan Cach
+*/
+
+section a {
+    text-decoration: none;
+}
+
+section form {
+    margin-top: 10%;
+}
+
+#seznam {
+    margin-left: 10px;
+}
+
+#vypisClanku{
+    width: 75%;
+}
+
+#hledej {
+    width: 20%;
+}
+
+header img {
+    width: 15%;
+    height:4%;
+}
+
+#logo {
+    width: 2%;
+    height: 0.5%;
+}
+
+section hr {
+     border: 0; 
+     height: 0; 
+     border-top: 2px solid rgba(0, 0, 0, 0.1); border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+#center {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%
+}
+
+#paticka {
+    margin-top: 5%;
+}
+
+#filter {
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    display: block;
+    position: fixed; 
+    float: right; 
+    margin-left: 82%;
+    width: 18%; 
+    border-left: #999999  6px solid;
+    border-top: #999999 3px solid;
+    border-bottom: #999999 3px solid;
+    background-color: white; 
+    margin-top: 10px;
+}
+
+#filter hr {
+    border: 1px #999999 solid;
+    width: 90%;
+    
+}
+
+#filter a {
+    font-size: 115%;
+    padding: 2px;
+    margin-top: 5px; 
+}
+
+
+#filter a:hover {
+     padding: 2px;
+   border-left: #006AEB 4px solid;
+   
+}
+
+#filter a:active{
+    border-left: #006AEB 4px solid;
+}
+
+#chyba {
+    color: red;
+}
+
+#underline {
+    text-decoration: underline;
+}
+
+#logo {
+    margin-top: 3%;
+    width: 40%;
+    height: 25%;
+    margin-left: 30%;
+}

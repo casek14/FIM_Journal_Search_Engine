@@ -1,0 +1,58 @@
+{block content}
+<div id="center" >
+<div class="w3-container">
+<a class="w3-btn w3-large w3-blue w3-margin-top" href="{$detail->getLinkNaCasopis()}" target="_blank"><i class="fa fa-link "></i> Link na časopis</a>
+<a class="w3-btn w3-large w3-blue w3-margin-top" href="{$detail->getOdkaz()}" target="_blank"><i class="fa fa-link "></i> Link na článek</a>
+<button onclick="document.getElementById('id01').style.display='block'" class="w3-btn w3-margin-top w3-large w3-blue "><i class="fa fa-quote-right"></i> Generuj Citaci</button>
+
+
+
+</div>
+<div id="id01" class="w3-modal" >
+    <div class="w3-modal-content">
+        <div class="w3-container">
+            <span onclick="document.getElementById('id01').style.display='none'" class="w3-closebtn">×</span>
+            <h2>Citace - ISO 690</h2>
+            <p class="w3-border-top w3-margin-top">
+                {$autor}, {$detail->getTitulek()}.{$detail->getNazevCasopisu()}, 
+                {$detail->getDatumPublikace()}, {$detail->getRocnikCasopisu()}. {$detail->getCisloCasopisu()}:{$detail->getRozsahStranek()}
+                         
+            </p>
+        </div>
+    </div>
+</div>
+                
+                
+                
+              <hr />  
+     <div class="w3-container">
+         <h3>Vydavatel: {$detail->getNazevCasopisu()}</h3>
+         <h4>Časopis: {$detail->getNazevZdroje()}</h4>
+         <p class="w3-small">Ročnik {$detail->getRocnikCasopisu()}, číslo {$detail->getCisloCasopisu()}, rozsah stránek {$detail->getRozsahStranek()} </p>
+     </div> 
+     <hr />
+     
+         <div class="w3-container">
+             <h3>{strip_tags($detail->getTitulek())}</h3> 
+             DOI: {$detail->getDoi()}
+             <h5>Auroři:</h5> {foreach $detail->getAutori() as $a}
+             {$a}<br />
+             {/foreach}
+                 
+         </div>
+      <hr />  
+      
+      <div class="w3-container">
+          <h4>Klíčová slova</h4>
+          {$detail->getKlicovaSlova()}
+      </div>
+      <hr />  
+      
+      <div class="w3-container">
+          <h4>Abstrakt</h4>
+          {strip_tags($detail->getAbstrakt())}
+      </div>
+      <hr />  
+</div>
+          <div id="paticka"></div>
+{/block}
